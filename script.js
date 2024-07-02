@@ -3,7 +3,7 @@
         return Math.floor(Math.random() * 3000) + 1000;
     }
 
-    function createPromise(number) {
+    async function createPromise(number) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(number);
